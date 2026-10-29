@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#075b9c">
+  <meta name="description" content="Apna Sahayak — a caring voice, in your language. Simple voice assistance for senior citizens.">
+  <title>Apna Sahayak — A caring voice, in your language</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Apna Sahayak home">
+      <img src="assets/apna-sahayak-logo.jpg" alt="Apna Sahayak logo: A caring voice, in your language">
+      <span class="brand-copy"><strong>Apna Sahayak</strong><small>A caring voice, in your language.</small></span>
+    </a>
+    <div class="header-tools">
+      <label class="language-label" for="languageSelect">Language / भाषा</label>
+      <select id="languageSelect" aria-label="Choose your language">
+        <option value="en-IN" selected>English</option>
+        <option value="hi-IN">हिन्दी — Hindi</option>
+        <option value="pa-IN">ਪੰਜਾਬੀ — Punjabi</option>
+        <option value="bn-IN">বাংলা — Bengali</option><option value="ta-IN">தமிழ் — Tamil</option><option value="te-IN">తెలుగు — Telugu</option><option value="mr-IN">मराठी — Marathi</option><option value="gu-IN">ગુજરાતી — Gujarati</option><option value="kn-IN">ಕನ್ನಡ — Kannada</option><option value="ml-IN">മലയാളം — Malayalam</option><option value="or-IN">ଓଡ଼ିଆ — Odia</option><option value="as-IN">অসমীয়া — Assamese</option><option value="ur-IN">اردو — Urdu</option><option value="kok-IN">कोंकणी — Konkani</option><option value="mai-IN">मैथिली — Maithili</option><option value="sa-IN">संस्कृतम् — Sanskrit</option><option value="ne-NP">नेपाली — Nepali</option><option value="sd-IN">سنڌي — Sindhi</option><option value="ks-IN">کٲشُر — Kashmiri</option><option value="doi-IN">डोगरी — Dogri</option><option value="mni-IN">মেইতেইলোন্ — Meitei / Manipuri</option><option value="sat-IN">ᱥᱟᱱᱛᱟᱲᱤ — Santali</option><option value="brx-IN">बड़ो — Bodo</option>
+        <option value="bn-IN">বাংলা — Bengali</option>
+        <option value="ta-IN">தமிழ் — Tamil</option>
+        <option value="te-IN">తెలుగు — Telugu</option>
+        <option value="mr-IN">मराठी — Marathi</option>
+        <option value="gu-IN">ગુજરાતી — Gujarati</option>
+        <option value="kn-IN">ಕನ್ನಡ — Kannada</option>
+        <option value="ml-IN">മലയാളം — Malayalam</option>
+        <option value="or-IN">ଓଡ଼ିଆ — Odia</option>
+        <option value="as-IN">অসমীয়া — Assamese</option>
+        <option value="ur-IN">اردو — Urdu</option>
+        <option value="kok-IN">कोंकणी — Konkani</option>
+        <option value="mai-IN">मैथिली — Maithili</option>
+        <option value="sa-IN">संस्कृतम् — Sanskrit</option>
+        <option value="ne-NP">नेपाली — Nepali</option>
+        <option value="sd-IN">سنڌي — Sindhi</option>
+        <option value="ks-IN">کٲشُر — Kashmiri</option>
+        <option value="doi-IN">डोगरी — Dogri</option>
+        <option value="mni-IN">মেইতেইলোন্ — Meitei / Manipuri</option>
+        <option value="sat-IN">ᱥᱟᱱᱛᱟᱲᱤ — Santali</option>
+        <option value="brx-IN">बड़ो — Bodo</option>
+      </select>
+      <button class="voice-top" id="voiceTop" type="button"><span aria-hidden="true">🎙</span> <span data-i18n="talkToMe">Talk to me</span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="welcomeEyebrow">A little help, whenever you need it</p>
+        <h1 data-i18n="heroTitle">Your caring companion, just a voice away.</h1>
+        <p class="hero-lede" data-i18n="heroText">Set medicine reminders, reach your family, and ask everyday questions — without struggling with tiny text or complicated menus.</p>
+        <div class="hero-actions">
+          <button class="button button-primary" id="startVoice"><span aria-hidden="true">🎙</span> <span data-i18n="startTalking">Start talking</span></button>
+          <a class="button button-secondary" href="#help" data-i18n="exploreFeatures">Explore features</a>
+        </div>
+        <p class="voice-status" id="voiceStatus" role="status" aria-live="polite" data-i18n="voiceReady">Voice assistant is ready when you are.</p>
+      </div>
+      <div class="hero-art">
+        <div class="sun-orbit"></div>
+        <div class="art-card">
+          <div class="art-people" aria-hidden="true">
+            <div class="person person-one"><span class="hair"></span><span class="face"></span><span class="body"></span></div>
+            <div class="person person-two"><span class="hair"></span><span class="face"></span><span class="body"></span></div>
+          </div>
+          <div class="speech-bubble" aria-hidden="true">Hello! <span>•••</span></div>
+          <div class="sound-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="mic-circle" aria-hidden="true">🎙</div>
+          <p data-i18n="artCaption">Here to listen. Here to help.</p>
+        </div>
+        <div class="floating-note note-reminder"><span>✓</span><div><strong data-i18n="reminderCardTitle">Medicine reminder</strong><small data-i18n="reminderCardText">A gentle nudge, on time</small></div></div>
+        <div class="floating-note note-family"><span>♡</span><div><strong data-i18n="familyCardTitle">Family is close</strong><small data-i18n="familyCardText">Call someone you love</small></div></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Design principles">
+      <div><span class="trust-icon">Aa</span><span data-i18n="largeText">Large, easy-to-read text</span></div>
+      <div><span class="trust-icon">♫</span><span data-i18n="yourLanguage">Your language, your choice</span></div>
+      <div><span class="trust-icon">♡</span><span data-i18n="simpleSafe">Simple, calm and caring</span></div>
+    </section>
+
+    <section class="section" id="help">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="everydayHelp">EVERYDAY HELP</p>
+        <h2 data-i18n="helpTitle">What can I help you with?</h2>
+        <p data-i18n="helpSubtitle">Tap a large card or simply ask out loud.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-blue">
+          <div class="feature-icon" aria-hidden="true">⏰</div>
+          <h3 data-i18n="medicineTitle">Medicine reminders</h3>
+          <p data-i18n="medicineText">Add a reminder so you can remember your medicines at the right time.</p>
+          <button class="text-button" data-open="medicine" data-i18n="setReminder">Set a reminder →</button>
+        </article>
+        <article class="feature-card feature-green">
+          <div class="feature-icon" aria-hidden="true">☎</div>
+          <h3 data-i18n="familyTitle">Call your family</h3>
+          <p data-i18n="familyText">Keep important people close. Add a contact and call them with one tap.</p>
+          <button class="text-button" data-open="family" data-i18n="manageContacts">Manage contacts →</button>
+        </article>
+        <article class="feature-card feature-gold">
+          <div class="feature-icon" aria-hidden="true">☼</div>
+          <h3 data-i18n="questionsTitle">Everyday questions</h3>
+          <p data-i18n="questionsText">Ask a simple question using your voice or by typing a message.</p>
+          <button class="text-button" data-open="ask" data-i18n="askQuestion">Ask a question →</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="assistant-panel" id="ask">
+      <div class="assistant-symbol" aria-hidden="true">🎙</div>
+      <div class="assistant-content">
+        <p class="eyebrow" data-i18n="yourAssistant">YOUR VOICE ASSISTANT</p>
+        <h2 data-i18n="askAnything">You can talk to me about anything simple.</h2>
+        <p data-i18n="assistantHelp">Try “Remind me to take my medicine at 8 PM” or “I want to call my daughter.”</p>
+        <form id="askForm" class="ask-form">
+          <label class="sr-only" for="questionInput" data-i18n="typeQuestion">Type your question</label>
+          <input id="questionInput" type="text" autocomplete="off" placeholder="Type or use the microphone…" data-i18n-placeholder="questionPlaceholder">
+          <button class="button button-primary" type="submit" data-i18n="send">Send</button>
+          <button class="button mic-button" id="askVoice" type="button" aria-label="Ask by voice">🎙</button>
+        </form>
+        <div id="answerBox" class="answer-box" role="status" aria-live="polite" hidden></div>
+      </div>
+    </section>
+
+    <section class="section tools-section" id="tools">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="littleTools">LITTLE TOOLS, BIG HELP</p>
+        <h2 data-i18n="toolsTitle">Made for everyday life</h2>
+      </div>
+      <div class="tool-grid">
+        <article class="tool-card" id="medicine">
+          <div class="tool-heading"><span class="mini-icon">⏰</span><div><h3 data-i18n="medicineTitle">Medicine reminders</h3><p data-i18n="reminderFormHint">Create a reminder on this device.</p></div></div>
+          <form id="reminderForm" class="stack-form">
+            <label for="medicineName" data-i18n="medicineName">Medicine or task</label>
+            <input id="medicineName" required placeholder="e.g. Morning medicine">
+            <label for="reminderTime" data-i18n="time">Time</label>
+            <input id="reminderTime" type="time" required value="08:00">
+            <label for="reminderRepeat" data-i18n="repeat">Repeat</label>
+            <select id="reminderRepeat"><option value="daily" selected data-i18n="daily">Every day</option><option value="once" data-i18n="once">Once</option></select>
+            <button class="button button-primary" type="submit" data-i18n="saveReminder">Save reminder</button>
+          </form>
+          <ul class="reminder-list" id="reminderList" aria-live="polite"></ul>
+          <button class="button button-secondary" id="enableNotifications" type="button">🔔 Enable browser notifications</button>
+          <p class="small-note" data-i18n="reminderNote">Demo note: reminders work while this page is open. They are not a substitute for medical advice.</p>
+        </article>
+        <article class="tool-card" id="family">
+          <div class="tool-heading"><span class="mini-icon green">☎</span><div><h3 data-i18n="familyTitle">Call your family</h3><p data-i18n="contactHint">Save a trusted contact for quick access.</p></div></div>
+          <form id="contactForm" class="stack-form">
+            <label for="contactName" data-i18n="contactName">Contact name</label>
+            <input id="contactName" required placeholder="e.g. Ananya">
+            <label for="contactPhone" data-i18n="phoneNumber">Phone number</label>
+            <input id="contactPhone" type="tel" required placeholder="+91 98765 43210">
+            <button class="button button-primary" type="submit" data-i18n="addContact">Add contact</button>
+          </form>
+          <ul class="contact-list" id="contactList" aria-live="polite"></ul>
+          <p class="small-note" data-i18n="contactNote">Calling opens your device's phone app. Test with a trusted contact.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="safety-band">
+      <span class="safety-heart" aria-hidden="true">♡</span>
+      <div><h2 data-i18n="safetyTitle">Care should feel simple and safe.</h2><p data-i18n="safetyText">Your browser may ask for microphone permission. Voice features depend on your device and browser, and may not support every language equally.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#home">Apna Sahayak <span>♥</span></a>
+    <p data-i18n="footerTagline">A caring voice, in your language.</p>
+    <p class="footer-note" data-i18n="footerNote">A community-minded demo website. Your saved data stays in this browser.</p>
+    <p class="footer-note">For real AI replies, see the optional secure backend setup in README.md.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
